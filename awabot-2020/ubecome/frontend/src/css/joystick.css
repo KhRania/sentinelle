@@ -1,0 +1,21 @@
+#joystick
+{ position: absolute;
+    overflow: visible;
+    left: 840px;
+    top: 35%;
+    stroke: #fff;
+    fill: #fff;
+    border-radius: 30px;
+    background-color: #5D67FF;
+}
+#joystick.disabled {
+    pointer-events: none;
+    stroke: #343434;
+    fill: #282828;
+}
+#manual-button{
+    transform: rotateX(17deg);
+    fill:#5D67FF;
+    margin-top:100%;
+    padding-left: 10%;
+}

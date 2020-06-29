@@ -1,0 +1,536 @@
+@media only screen and (min-width:768px){
+    div{
+            width :100% ;
+    }
+:root
+{
+    --header-theme-color: #250E53;
+    --main-theme-color: #EFEFEF;
+    --dark-theme-color: #202020;
+    --light-theme-color: #C8C8C8;
+    --light-text-theme-color: #DEDEDE;
+    --dark-text-theme-color: #343434;
+    --header-height: 60px;
+    --min-screen-width: 50px;
+    touch-action: none;
+}
+body
+{
+    min-width: var(--min-screen-width);
+}
+#top-menu
+{    width: fit-content;
+    height: fit-content;
+    padding-left: -1%;
+    background-image: linear-gradient(to top,#0F144D 50px, #2E3184 30px,#0F144D 20px,#2E3184)!important
+    }
+    #body-container
+{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    display: table;
+    background-image: linear-gradient(to right,#0F144D 50px, #2E3184 30px,#0F144D 20px,#2E3184)!important
+}
+#admin-container, #account-container, #login-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    touch-action: none;
+}
+#account-container form
+{
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border: 3px solid #5D67FF;
+    touch-action: none;
+}
+#account-container .lock-field .input:after
+{
+    font-family: Icons;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    color: var(--dark-text-theme-color);
+}
+#login-container .segment
+{
+    width:380px;
+    color: #5D67FF;
+    background-color: transparent;
+    border: 3px solid white;
+}
+#authentifcation{
+padding-left:19%;
+font-weight:bold;
+font-style: italic;
+}
+.lock-field.locked
+{
+    pointer-events: none;
+}
+.lock-field.locked .input
+{
+    opacity: 0.6;
+}
+.lock-field.locked .input:after
+{
+    content: "\f023";
+}
+.lock-field.unlocked .input:after
+{
+    content: "\f13e";
+}
+.offset-page-content
+{
+    padding-top: 50px;
+}
+.fill-parent
+{
+    width: 100%;
+    height: 100%;
+}
+#logo-img
+{
+    width: 180px;
+    margin-right: -50px;
+    margin-left: -50px;
+    padding: 7px;
+    margin-top:-7px;
+    display: block;
+}
+#logo
+{
+    width: 45px;
+    margin-bottom: 112%;
+    margin-top: 19%;
+    position: relative;
+}
+#login-position
+{
+    display: flex;
+    align-items: center;
+}
+.modals
+{
+    min-width: var(--min-screen-width);
+}
+.error-message
+{
+    color: red;
+}
+/* General */
+/* Home */
+#pilot-toolbar
+{
+    height: 150px;
+    width: 100%;
+}
+#blink{
+    animation: Blink 4s infinite;
+    color: white;
+    padding-left:52%;
+    padding-top: 1.2%;
+    font-weight: bold;
+    font-size: 20px;
+    display : flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    position :absolute;
+}
+@keyframes Blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+/* BatteryIndicator */
+#indicator-container
+{
+    text-align: right;
+}
+/* BatteryIndicator */
+#indicator-container
+{
+    text-align: right;
+}
+#size{
+    padding-left:75.3%;
+    width: 10%;
+    padding-top: 1.2%;
+    display : flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    position :absolute;
+}
+#control-panel-tem
+{
+    width: 130px;
+    height: 100%;
+    margin-top: -20px;
+}
+#control-panel-hum
+{
+    width: 130px;
+    height: 100%;
+}
+#label-humd
+{
+    margin-left: 10px;
+}
+#logo-img-gif{
+    width: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: -150px;
+    color: red;
+    animation: logo-img-gif 60s infinite;
+}
+#logo-img-gif1{
+    width: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+input[type="texte"] {
+    position: relative;
+    background-color: transparent;
+    border:  transparent;
+    margin-top: -10px;
+    font-size: 20px;
+    color:white;
+    font-weight:bold;
+    font-style: italic;
+}
+input[type="text2"] {
+position: relative;
+background-color: transparent;
+border:  transparent;
+margin-top: 8%;
+font-size: 20px;
+font-weight:bold;
+font-style: italic;
+color:white;}
+#ligne{
+    padding: 30px;
+}
+input[type="text1"] {
+    position: relative;
+    background-color: transparent;
+    border:  transparent;
+    margin-top: -9px;
+    font-size: 20px;
+    color:white;
+    font-weight:bold;
+    font-style: italic;
+}
+#icon-menu-bar{
+position: absolute;
+fill: "white";
+}
+  #config-temps
+  {
+    width:120px;
+    height: 100%;
+    right: 30%;
+    margin-left:-600px;
+    margin-top : 50px;
+  }
+  #logo-img-config
+{
+    width: 250px;
+}
+#config-temps Form {
+    width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-left:200px;
+  margin-top:-170px;
+}
+      .sortable-handler {
+        touch-action: none;
+        }
+        div.main{
+            background-color: blue;
+          }
+          svg {
+            pointer-events:none;
+          }
+          svg *{
+            pointer-events:auto;
+          }
+    #tr{
+        border-bottom:2px solid  red;
+        border-width: 1px 0
+    }
+        #patrol-container
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-right: 60%;
+    touch-action: none;
+}
+#pilot-patrol
+{
+    overflow: hidden;
+    border-right: 1px solid var(--light-theme-color);
+}
+#panel-switch
+{position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+#Humidity-tools{
+    width: 10%;
+    padding-left: 64%;
+    margin-top: 1.3%;
+    margin-right: 10%;
+    display : flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    position :absolute;
+}
+#temperature-tools{
+    padding-left:69.8%;
+    width: 10%;
+    margin-top: 1.3%;
+    display : flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    position :absolute;
+}
+#panel-sensors{
+    background-color: transparent;
+}
+#menu-tools
+{position: fixed;
+    width: 110%;
+    right: -2%;
+    background: linear-gradient(to left,#2E3184 1%,#2E3184 , transparent 55%) ;
+    height: 7%;
+    border-bottom: transparent;
+    opacity: 0.9;
+    padding-left: 5%;
+    top: 0.2%;
+    display: flex;
+    align-content: flex-end;
+}
+.menu-class{
+    border: transparent;
+}
+.map-panel{
+    position: fixed;
+    height:30%;
+    top: 67%;
+    display: table-cell;
+    -radius: 12px ;
+    border : 8px solid #5D67FF;
+    opacity: 0.9;
+    touch-action: none;
+    width: 22%;
+    border-radius: 8px;
+    max-width: 22%;
+    max-height: 30%;
+padding-left: 1%;
+}
+#map-panel-acceuil{
+    position: relative;
+    width: 97%;
+    height:33%;
+    top: 66%;
+left: 7%;
+    display: table;
+    background-color: transparent;
+}
+#home-container
+{
+    position: relative;
+}
+#map-home
+{
+margin-left:-4.7% ;
+top :0.2%;
+    overflow: hidden;
+    height: 100%;
+    position: absolute;
+    width: 125%;
+}
+#menu-item{
+    top: 91%;
+    position: fixed;
+}
+#state-robot{
+    width: 10%;
+    padding-left: 80%;
+    margin-top: 1.3%;
+    display : flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position :absolute;
+}
+input[type="texte3"] {
+    position: relative;
+    background-color: transparent;
+    border: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    color:white;
+}
+        #joystik-div{
+width: 100%;
+height: 100%;
+        }
+        #tr{
+            border:  10px dashed  white;
+        }
+            #tablestyle
+            {
+                display: block;
+        padding: 20px;
+        background-color:transparent;
+        border-radius: 10px;
+        border: 3px solid white;
+        width:720px;
+        height:130px;
+        border-collapse: collapse;
+        border-spacing: 2em;
+        overflow: scroll;
+        color: white;
+        
+            }
+            #tablestyleronde{display: block;
+                padding: 20px;
+                background-color:transparent;
+                border-radius: 10px;
+                border: 3px solid white;
+                width:730px;
+                height:600px;
+                color: white;
+                border-collapse: collapse;
+                border-spacing: 2em;
+                overflow: scroll;
+            }
+            #tablestyleConfig
+            {
+        padding-left: 134px;
+        ;
+            }
+            #bottonedit{
+                background-color: #5D67FF;
+                color:white
+            }
+            #patrol-container
+    {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2%;
+        padding-right: 60%;
+        touch-action: none;
+    }
+    #pilot-patrol
+    {
+        flex: 0.5;
+        overflow: hidden;
+        border-right: 1px solid var(--light-theme-color);
+    }
+    #panel-switch
+    {position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    #tooltip {
+        width:100px;
+        text-align: center;
+        padding: 1px;
+        border-radius: 6px
+      }
+    }
+    #bottonedit1{
+        background-color: #5D67FF;
+        color:white;
+        margin-left: 320px;
+    }
+    #table {
+        width:100%;
+    }
+    #tableDetails {
+        width:60%;
+        margin-left: 100px;
+        border:1px solid ;
+    }
+    #table-header {
+        color: white;
+        font-size: 20px;
+        width:100%;
+        text-align: center;
+        background:#5D67FF;
+        ;
+    }
+    #patrol-icone{
+        font-size: 2%;
+        color: red;
+    }
+    #icone{
+        top: 3%;
+        margin-left: 80%;
+        position: absolute;
+        background-color: #5D67FF;
+    }
+    #alert{
+        width:16.8%;
+        margin-top: 5.2%;
+        margin-left:81% ;
+    }
+    #alert-temp{
+        width:22.9%;
+        margin-top: 8.7%;
+        margin-left:4.2% ;
+    }
+    #time{
+        margin-left: -20%;
+        position: center;
+        align-items: center;
+        font-size: 13px;
+    }
+    #alert-hum{
+        width:25%;
+        margin-top: 16%;
+        margin-left:14% ;
+    }
+    #botton
+    {
+        background-color: #5D67FF;
+        color:white;
+    }
+    #configure-container
+{
+    position: absolute;
+    width: fit-content;
+    min-width: 53%;
+    height: 80%;
+    top: 5%;
+    left: 25%;
+    border: 3px solid #5D67FF;
+    display: table;
+    float: left;
+    padding-bottom: 2%;
+      background-image: linear-gradient(to right,#0F144D 50px, #2E3184 30px,#0F144D 20px,#2E3184);
+    overflow-y: scroll;
+}
+#config{
+    padding-left: 58px;
+    margin-top: -32px;
+color: white;
+position: relative;
+}

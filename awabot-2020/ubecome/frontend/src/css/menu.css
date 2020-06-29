@@ -1,0 +1,40 @@
+.menu-item {
+    margin: 25px 0 25px 0;
+    margin-inline-end: 10px;
+    background: #fafafa;
+    transition: all 0.3s linear;
+    border-radius: 12px;
+    text-align: center;
+    border: 10px solid #fafafa;
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.3);
+    padding: 0 40px;
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .menu-item:hover {
+    box-shadow: 0 7px 30px #1ab1f5;
+    padding: 0 42px;
+    transition: all 0.1s ease-out;
+    color: #1ab1f5;
+  }
+  
+  .menu-item-wrapper.active {
+    color: #1ab1f5;
+    font-weight: 500;
+  }
+  
+  .menu-item:active {
+    background: #fafafa;
+    transition: all 0.1s ease-out;
+    border: 9px solid #fafafa;
+    box-shadow: 0 7px 30px #a80a0aa6;
+    color: #a80a0aa6;
+  }
+  
+  .scroll-menu-arrow {
+    padding: 20px;
+    cursor: pointer;
+    color: #fafafa;
+  }
+  

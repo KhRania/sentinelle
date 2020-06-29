@@ -1,0 +1,20 @@
+/* SemanticUI overrides */
+
+.modal > *
+{
+	background-color: #5D67FF !important;
+	border: none !important;
+}
+
+.modal .header
+{
+	background-color: white!important ;
+
+	border-bottom: 1px solid #5D67FF !important;
+}
+
+.modal .actions > .ui.inverted.basic.button
+{
+	box-shadow: 0 0 0 2px var(--light-theme-color) inset !important;
+	color: var(--light-theme-color) !important;
+}
